@@ -1,13 +1,14 @@
 app-id: io.github.obiwankennedy.HotShots
 runtime: org.kde.Platform
+runtime-version: 5.15-23.08
 sdk: org.kde.Sdk
-runtime-version: '5.15'
 
 command: hotshots
 
 finish-args:
   - --socket=wayland
   - --socket=fallback-x11
+  - --share=ipc
   - --device=dri
   - --filesystem=xdg-pictures
   - --filesystem=xdg-documents
